@@ -31,3 +31,58 @@ while (true) {
     alert("Wrong login !");
   }
 }
+
+// Задание 3
+
+let numOne = prompt("Введите первое число");
+
+if (numOne === "") {
+  alert("Вы ничего не ввели");
+} else if (numOne === null) {
+  alert("Вы вышли");
+} else {
+  let numOnePars = parseFloat(parseInt(numOne));
+
+  let numTwo = prompt("Введите второе число");
+  if (numTwo === "") {
+    alert("Вы ничего не ввели");
+  } else if (numTwo === null) {
+    alert("Вы вышли");
+  } else {
+    let numTwoPars = parseFloat(parseInt(numTwo));
+  }
+
+  let resultOne = parseFloat(prompt(`Сколько будет ${numOne} * ${numTwo} ?`));
+
+  if (resultOne === numOne * numTwo) {
+    alert("Все верно !");
+  } else {
+    alert("Ответ неверный !");
+  }
+
+  let resultTwo = parseFloat(prompt(`Сколько будет ${numOne} / ${numTwo} ?`));
+
+  if (resultTwo === numOne / numTwo) {
+    alert("Все верно !");
+  } else if (resultTwo === 0) {
+    alert("На ноль делить нельзя !");
+  } else {
+    alert("Ответ неверный !");
+  }
+
+  let resultThree = parseFloat(prompt(`Сколько будет ${numOne} + ${numTwo} ?`));
+
+  if (resultThree === numOne + numTwo) {
+    alert("Все верно !");
+  } else {
+    alert("Ответ неверный !");
+  }
+
+  let resultFour = parseFloat(prompt(`Сколько будет ${numOne} - ${numTwo} ?`));
+
+  if (resultFour === numOne - numTwo) {
+    alert("Все верно !");
+  } else {
+    alert("Ответ неверный !");
+  }
+}
